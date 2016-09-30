@@ -1,0 +1,28 @@
+#renderArea {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    color: #ccccff;
+    text-decoration: none;
+}
+
+canvas {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
