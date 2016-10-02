@@ -1,9 +1,9 @@
 <div>
-
+    <!--
     <div class="info " style="position: absolute; left: 300px; right: 300px; top: 70px; text-align: center; ">
         <a href="http://potree.org " target="_blank ">potree.org</a><br> Point cloud courtesy of <a href="http://prologuesystems.com/ " target="_blank ">Prologue Systems</a>. (36M points)
     </div>
-
+  -->
     <!-- INFOS / STATS -->
     <div id="lblNumVisibleNodes " class="info " style="position: absolute; left: 10px; top: 80px; width: 400px; color:white "></div>
     <div id="lblNumVisiblePoints " class="info " style="position: absolute; left: 10px; top: 100px; width: 400px; color:white "></div>
@@ -14,7 +14,12 @@
     <img src="potree/resources/icons/fps_controls.png" ng-click="vm.useEarthControls()" title="Fly Camera" />
     -->
 </div>
+<div id="container"><canvas style="width:100%;height:95%;border:1px gray solid;"></div>
 <div id="renderArea"></div>
+
+    <div id="controlarea" style="position: absolute; right: 0px; top: 70px; text-align: center;">
+    </div>
+    
 <!--
 
     <script src="potree/js/viewer.js"></script>
