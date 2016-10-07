@@ -32,7 +32,7 @@ function config($routeProvider) {
 config.$inject = ['$routeProvider'];
 
 var app = angular.module(moduleName, ['ngRoute', 'ngMessages', 'ngMaterial', servicesModuleName, controllersModuleName, directivesModuleName])
-    .config(function($mdIconProvider) {
+    .config(function($mdIconProvider, $mdThemingProvider) {
         $mdIconProvider
             .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
             .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24)

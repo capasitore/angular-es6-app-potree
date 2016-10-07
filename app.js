@@ -12,6 +12,11 @@ app.get('/api/getall', function(request, response) {
     response.send(data);
 });
 
+app.get('/api/getmissionlist', function(request, response) {
+    var data = serviceApi.getMissionList();
+    response.send(data);
+});
+
 app.get('/', function(request, response) {
     console.log('Index server started!!!');
     response.sendfile('Index.html');

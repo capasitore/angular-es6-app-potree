@@ -22,8 +22,13 @@ class MissionController {
         this.people = people;
 
         INIT.set(this, () => {
+            /*
             SERVICE.get(this).getActiveBooks().then(books => {
                 this.books = books;
+            });
+            */
+            SERVICE.get(this).getMissionList().then(todos => {
+                this.todos = todos;
             });
         });
         INIT.get(this)();

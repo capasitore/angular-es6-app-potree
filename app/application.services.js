@@ -12,6 +12,10 @@ class ApplicationService {
         return HTTP.get(this).get('/api/getall').then(result => result.data);
     }
 
+    getMissionList() {
+        return HTTP.get(this).get('/api/getmissionlist').then(result => result.data);
+    }
+
     static applicationFactory($http) {
         return new ApplicationService($http);
     }
