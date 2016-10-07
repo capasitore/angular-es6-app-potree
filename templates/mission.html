@@ -24,10 +24,18 @@
                     <h4>{{ todo.missionCave }} - Localização {{todo.missionLoacation}}</h4>
                     <p>{{ todo.missionOre }}</p>
                 </div>
+                <!--
                 <md-checkbox class="md-secondary " ng-model="person.selected "></md-checkbox>
+-->
 
-                <md-icon md-svg-icon="communication:email " ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
+
+                <md-icon md-svg-icon="action:ic_visibility_24px" ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
+                <md-icon md-svg-icon="file:ic_cloud_queue_24px" ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
+                <md-icon md-svg-icon="device:ic_image_24px " ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
+                <md-icon md-svg-icon="action:ic_delete_24px " ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
+                <!--   
                 <md-icon class="md-secondary " ng-click="vm.doSecondaryAction($event) " aria-label="Chat " md-svg-icon="communication:message "></md-icon>
+-->
                 <md-divider></md-divider>
             </md-list-item>
             <md-divider></md-divider>

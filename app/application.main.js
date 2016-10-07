@@ -37,7 +37,12 @@ var app = angular.module(moduleName, ['ngRoute', 'ngMessages', 'ngMaterial', ser
             .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
             .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24)
             .iconSet('navigation', 'img/icons/sets/navigation-symbol.svg', 24)
-            .defaultIconSet('img/icons/sets/core-icons.svg', 24);
+            .iconSet('file', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-file.svg', 24)
+            .icon('ic_cloud', 'bower_components/material-design-icons/file/svg/production/ic_cloud_48px.svg')
+            .iconSet('action', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-action.svg', 24)
+            .iconSet('device', 'bower_components/material-design-icons/sprites/svg-sprite/svg-sprite-image.svg', 24)
+
+        .defaultIconSet('img/icons/sets/core-icons.svg', 24);
     }).config(config);
 
 export default moduleName;

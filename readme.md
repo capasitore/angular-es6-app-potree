@@ -5,6 +5,7 @@ To run the sample, open a command prompt and execute the following commands:
  -  bower install (to install front-end packages)
  -  bower install material-design-lite --save
  -  bower install angular-material
+ -  bower install material-design-icons
  -  bower  install dat-gui
  -  bower install threejs
  -  npm run gulp (to start the server)
