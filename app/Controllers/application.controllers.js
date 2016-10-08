@@ -9,5 +9,5 @@ angular.module(moduleName, [])
     .controller('application.homeController', HomeController)
     .controller('application.missionController', MissionController)
     .controller('application.cloudpointController', CloudPointController);
-
+// .controller('application.dialogController', DialogController);
 export default moduleName;

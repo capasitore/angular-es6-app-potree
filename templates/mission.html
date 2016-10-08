@@ -17,7 +17,7 @@
             <md-subheader class="md-no-sticky ">{{vm.todos.length}} Missões</md-subheader>
             <md-divider></md-divider>
 
-            <md-list-item class="md-3-line" ng-repeat="todo in vm.todos " ng-click="vm.goToPerson(person.name, $event) ">
+            <md-list-item class="md-3-line" ng-repeat="todo in vm.todos " ng-click="vm.showAdvanced($event) ">
                 <img alt="{{ todo.missionName }} " ng-src="{{ todo.img }} " class="md-avatar " />
                 <div class="md-list-item-text " layout="column ">
                     <h3>{{ todo.missionName }}</h3>
@@ -33,7 +33,9 @@
                 <md-icon md-svg-icon="file:ic_cloud_queue_24px" ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
                 <md-icon md-svg-icon="device:ic_image_24px " ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
                 <md-icon md-svg-icon="action:ic_delete_24px " ng-click="vm.doSecondaryAction($event) " aria-label="Send Email " class="md-secondary md-hue-3 "></md-icon>
-                <!--   
+                <md-checkbox class="md-secondary " ng-model="person.selected "></md-checkbox>
+                <!--    
+
                 <md-icon class="md-secondary " ng-click="vm.doSecondaryAction($event) " aria-label="Chat " md-svg-icon="communication:message "></md-icon>
 -->
                 <md-divider></md-divider>
